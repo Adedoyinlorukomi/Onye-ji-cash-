@@ -1,0 +1,38 @@
+body{
+  position: relative;
+}
+
+#section-one{
+  display: grid;
+  grid-template-columns: 0.8fr 1.5fr 1.7fr;
+  /* background-color: ; */
+}
+
+#call{
+  border: dashed 0.2px #1AAEC8;
+  padding: 10px 20px;
+}
+
+#section-two{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  z-index: 0;
+}
+
+#s-three{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2%;
+}
+
+#section-three{
+  position: relative;
+  z-index: 1;
+}
+
+#cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
