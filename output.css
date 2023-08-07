@@ -2673,6 +2673,12 @@ a:hover{
   padding: 10px 20px;
 }
 
+#call2{
+  border: dashed 0.2px #1AAEC8;
+  padding: 10px 20px;
+  display: none;
+}
+
 #section-two{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2842,6 +2848,10 @@ a:hover{
     padding: 0;
     margin-right: -15%;
   }
+
+  #call2{
+    display: block;
+  }
 }
 
 .hover\:font-bold:hover {
@@ -2967,6 +2977,10 @@ a:hover{
 }
 
 @media (max-width: 440px) {
+  .max-\[440px\]\:visible {
+    visibility: visible;
+  }
+
   .max-\[440px\]\:invisible {
     visibility: hidden;
   }
@@ -2985,28 +2999,16 @@ a:hover{
     margin-top: -20px;
   }
 
-  .max-\[440px\]\:mt-\[540px\] {
-    margin-top: 540px;
-  }
-
-  .max-\[440px\]\:mt-\[82px\] {
-    margin-top: 82px;
-  }
-
-  .max-\[440px\]\:mt-\[400px\] {
-    margin-top: 400px;
+  .max-\[440px\]\:mt-\[-30px\] {
+    margin-top: -30px;
   }
 
   .max-\[440px\]\:mt-\[440px\] {
     margin-top: 440px;
   }
 
-  .max-\[440px\]\:mt-\[-30px\] {
-    margin-top: -30px;
-  }
-
-  .max-\[440px\]\:mt-\[-70px\] {
-    margin-top: -70px;
+  .max-\[440px\]\:mt-\[82px\] {
+    margin-top: 82px;
   }
 
   .max-\[440px\]\:hidden {
@@ -3015,21 +3017,6 @@ a:hover{
 
   .max-\[440px\]\:translate-x-\[-34\%\] {
     --tw-translate-x: -34%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .max-\[440px\]\:translate-y-\[120px\] {
-    --tw-translate-y: 120px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .max-\[440px\]\:translate-y-\[140px\] {
-    --tw-translate-y: 140px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .max-\[440px\]\:translate-y-\[100px\] {
-    --tw-translate-y: 100px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 

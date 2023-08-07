@@ -22,6 +22,11 @@ a:hover{
     border: dashed 0.2px #1AAEC8;
     padding: 10px 20px;
 }
+#call2{
+    border: dashed 0.2px #1AAEC8;
+    padding: 10px 20px;
+    display: none;
+}
 
 #section-two{
     display: grid;
@@ -162,5 +167,8 @@ a:hover{
     #content{
         padding: 0;
         margin-right: -15%;
+    }
+    #call2{
+        display: block;
     }
 }
