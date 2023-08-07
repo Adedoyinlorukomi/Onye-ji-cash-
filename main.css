@@ -49,7 +49,14 @@ a:hover{
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 12px;
     row-gap: 25px;
+    animation: cards 4s 0s infinite ease-in-out;
 }
+@keyframes cards {
+    0%{transform: scale(100%);}
+    50%{transform: scale(90%);}
+    100%{transform: scale(80%);}
+}
+
 #shade{
     box-shadow: 2px 2px 5px 0 #1AAEC8;
 }
