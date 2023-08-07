@@ -17,7 +17,7 @@
     <div id="content">
         <div id="section-one" class="container pb-4">
            <!-- fixed -->
-            <a href="index.html" class="text-[#D43D26] no-underline font-semibold text-[24px] whitespace-nowrap max-[1024px]:text-[18px] max-[440px]:text-[14px] ">Onye-ji-cash</a>
+            <a href="index.html" class="text-[#D43D26] no-underline font-semibold text-[26px] whitespace-nowrap max-[1024px]:text-[24px] max-[440px]:text-[19px]">Onye-ji-cash</a>
             <div class="flex justify-around max-[1024px]:hidden">
                 <a class="text-[#1E1E1E] text-lg " href="index.html">Home</a>
                 <a class="text-[#1E1E1E] text-lg no-underline"  href="#section-three">About Us</a>
@@ -25,22 +25,22 @@
                 <a class="text-[#1E1E1E] text-lg no-underline" href="#section-seven">Contact Us</a>
             </div>
             <div class="flex justify-center gap-4">
-                <p id="call" class="text-[#1AAEC8] whitespace-nowrap  max-[440px]:hidden">Call +234 9054147689</p>
+                <p id="call" class="text-[#1AAEC8] whitespace-nowrap  max-[440px]:hidden animate-pulse">Call +234 9054147689</p>
                 <p type="button" data-bs-toggle="modal" data-bs-target="#myModal" id="shade"
-                 class="bg-[#D43D26] text-white text-xl max-[440px]:text-[15px] max-[440px]:px-1 max-[440px]:py-[7px]
-                  py-[12px] px-3  max-[1024px]:px-2 max-[1024px]:py-[10px] max-[1024px]:text-[18px] animate-bounce whitespace-nowrap">Get a quote for free</p>
-            
-                  <div class="offcanvas offcanvas-top" id="demo">
+                 class="bg-[#D43D26] text-white text-xl max-[440px]:text-[15px] max-[440px]:px-1 max-[440px]:py-[7px] py-[12px] px-3  max-[1024px]:px-2 
+                  max-[1024px]:py-[10px] max-[1024px]:text-[18px] animate-bounce whitespace-nowrap">Get a quote for free</p>
+            </div>
+                  <div style="height: 500px;" class="offcanvas offcanvas-top" id="demo">
                     <div class="offcanvas-header">
                       <h1 class="offcanvas-title"></h1>
                       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
                     </div>
-                    <div class="offcanvas-body flex flex-col gap-8">
-                        <a class="text-[#1E1E1E] text-lg " href="index.html">Home</a>
-                        <a class="text-[#1E1E1E] text-lg no-underline"  href="#section-three">About Us</a>
-                        <a class="text-[#1E1E1E] text-lg no-underline" href="#section-five">Our Services</a>
-                        <a class="text-[#1E1E1E] text-lg no-underline" href="#section-seven">Contact Us</a>
-                        <p id="call2" class="text-[#1AAEC8] whitespace-nowrap">Call +234 9054147689</p>
+                    <div class="offcanvas-body flex flex-col gap-12">
+                        <a class="text-[#1E1E1E] text-2xl " href="index.html">Home</a>
+                        <a class="text-[#1E1E1E] text-2xl no-underline"  href="#section-three">About Us</a>
+                        <a class="text-[#1E1E1E] text-2xl no-underline" href="#section-five">Our Services</a>
+                        <a class="text-[#1E1E1E] text-2xl no-underline" href="#section-seven">Contact Us</a>
+                        <p id="call2" class="text-[#1AAEC8] w-fit px-3 py-3 animate-pulse accent-slate-600">Call +234 9054147689</p>
                     </div>
                   </div>
                   
@@ -52,21 +52,26 @@
 
                     
               <!-- The Modal -->
-              <div class="modal" id="myModal">
+              <div class="modal" id="myModal" style="width: 100%;">
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
                       <button type="button" class="btn-close bg-[#D43D26] p-[14px] flex self-end" data-bs-dismiss="modal"></button>
                         <p class="m-auto text-3xl font-semibold">Get a quote</p>
-                        <form action="" class="mx-[37px]">
-                            <div class="mb-3 mt-3">
+                        <form action="" class="mx-[37px] was-validated">
+                            <div class="form-floating mb-3 mt-3">
+                                <input type="email" class="form-control" id="email" name="email"placeholder="Enter email address" name="email" required >
                                 <label for="email" class="form-label font-medium text-[14px]">Email address:</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter email address" name="email">
-                            </div>
-                            <div>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                              </div>
+                            <div class="form-floating">
+                                <textarea class="form-control" rows="10" id="comment" name="text" required placeholder="Describe message"></textarea>
                                 <label for="comment" class=" font-medium text-[14px]">Description:</label>
-                                <textarea class="form-control" rows="10" id="comment" name="text" placeholder="Describe message"></textarea>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
                             </div>
-                        <button type="submit" class="bg-[#D43D26] w-full py-3 text-white animate-bounce mt-7">Get a quote</button>
+                        <button type="submit" class="btn bg-[#D43D26] w-full py-3 text-white animate-bounce mt-7">Get a quote</button>
+                        
                       </form>
                         
                     </div>
@@ -77,7 +82,7 @@
                     </div>
               
                   </div>
-                </div>
+                
               </div>
               
             </div>
@@ -85,7 +90,7 @@
         <div id="section-two" class="">
              <div id="texts-one" class="bg-[#02799E] px-[40px] max-[1024px]:px-[20px] pt-[100px] flex flex-col gap-5">
                 <p class="text-6xl text-white leading-[90px] max-[1300px]:text-4xl max-[1024px]:text-4xl max-[440px]:text-center max-[440px]:text-3xl">"Delivering Efficiency: The Powerhouse of Logistics Solutions"</p>
-                <p class="text-2xl text-white leading-[36px] pr-[40px] max-[1024px]:text-lg max-[440px]:text-center max-[440px]:text-[12px]">"Trucking, Marine, Warehousing, and Oil Tanker Services - Unparalleled Cargo Management and Warehousing Expertise"</p>
+                <p class="text-2xl text-white leading-[36px] pr-[40px] max-[1024px]:text-lg max-[440px]:text-center max-[440px]:text-[14px]">"Trucking, Marine, Warehousing, and Oil Tanker Services - Unparalleled Cargo Management and Warehousing Expertise"</p>
                 <div class="flex gap-4 max-[440px]:gap-2">
                     <p type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="bg-[#D43D26] text-white text-xl py-[12px] px-3 animate-bounce max-[1024px]:text-lg whitespace-nowrap
                     max-[440px]:text-[15px] max-[440px]:px-0 max-[440px]:pb-0" id="shade">Get a quote for free</p>
@@ -213,13 +218,13 @@
                             <p class="font-semibold text-[#1E1E1E]">Logistics Manager, ABC Manufacturing</p>
                         </div>
                     </div> -->
-                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                    <div id="demo2" class="carousel slide" data-bs-ride="carousel">
 
                         <!-- Indicators/dots -->
                         <div class="carousel-indicators bg-black">
-                          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                          <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+                          <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
+                          <button type="button" data-bs-target="#demo2" data-bs-slide-to="2"></button>
                         </div>
                         
                         <!-- The slideshow/carousel -->
@@ -274,10 +279,10 @@
                         
                         <!-- Left and right controls/icons -->
                         <div class="pt-[100px]">
-                            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
                               <span class="carousel-control-prev-icon"></span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
                               <span class="carousel-control-next-icon bg-black"></span>
                             </button></div>
                       </div>

@@ -831,6 +831,10 @@ video {
   height: 500px;
 }
 
+.h-0 {
+  height: 0px;
+}
+
 .w-3\/4 {
   width: 75%;
 }
@@ -926,6 +930,16 @@ video {
 
 .animate-bounce {
   animation: bounce 1s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .cursor-zoom-in {
@@ -1410,6 +1424,10 @@ video {
 
 .gap-\[5\%\] {
   gap: 5%;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2190,6 +2208,10 @@ video {
   font-size: 24px;
 }
 
+.text-\[26px\] {
+  font-size: 26px;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -2370,6 +2392,10 @@ video {
 .subpixel-antialiased {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
+}
+
+.accent-slate-600 {
+  accent-color: #475569;
 }
 
 .opacity-60 {
@@ -2970,17 +2996,21 @@ a:hover{
     font-size: 18px;
   }
 
+  .max-\[1024px\]\:text-\[20px\] {
+    font-size: 20px;
+  }
+
   .max-\[1024px\]\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  .max-\[1024px\]\:text-\[24px\] {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 440px) {
-  .max-\[440px\]\:visible {
-    visibility: visible;
-  }
-
   .max-\[440px\]\:invisible {
     visibility: hidden;
   }
@@ -3130,5 +3160,13 @@ a:hover{
   .max-\[440px\]\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .max-\[440px\]\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .max-\[440px\]\:text-\[19px\] {
+    font-size: 19px;
   }
 }
