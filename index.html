@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onye</title>
-    <!-- npx tailwindcss -i ./main.css -o ./output.css --watch   -->
+    <!-- npx tailwindcss -i ./main.css -o ./output.css --watch -->
     <link rel="stylesheet" href="main.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="output.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,31 +17,43 @@
     <div id="content">
         <div id="section-one" class="container pb-4">
            <!-- fixed -->
-            <a href="index.html" class="text-[#D43D26] font-semibold text-[24px] whitespace-nowrap max-[1024px]:text-[18px] max-[1024px]:text-[14px] ">Onye-ji-cash</a>
-            <div class="flex justify-around text-[#1E1E1E] max-[1024px]:hidden">
-                <a href="index.html">Home</a>
-                <a href="#section-three">About Us</a>
-                <a href="#section-five">Our Services</a>
-                <a href="#section-seven">Contact Us</a>
+            <a href="index.html" class="text-[#D43D26] no-underline font-semibold text-[24px] whitespace-nowrap max-[1024px]:text-[18px] max-[440px]:text-[14px] ">Onye-ji-cash</a>
+            <div class="flex justify-around max-[1024px]:hidden">
+                <a class="text-[#1E1E1E] text-lg " href="index.html">Home</a>
+                <a class="text-[#1E1E1E] text-lg no-underline"  href="#section-three">About Us</a>
+                <a class="text-[#1E1E1E] text-lg no-underline" href="#section-five">Our Services</a>
+                <a class="text-[#1E1E1E] text-lg no-underline" href="#section-seven">Contact Us</a>
             </div>
             <div class="flex justify-center gap-4">
                 <p id="call" class="text-[#1AAEC8] whitespace-nowrap  max-[440px]:hidden">Call +234 9054147689</p>
                 <p type="button" data-bs-toggle="modal" data-bs-target="#myModal" id="shade"
-                 class="btn bg-[#D43D26] text-white text-xl max-[440px]:text-[15px] max-[440px]:px-1 max-[440px]:py-[7px]
+                 class="bg-[#D43D26] text-white text-xl max-[440px]:text-[15px] max-[440px]:px-1 max-[440px]:py-[7px]
                   py-[12px] px-3  max-[1024px]:px-2 max-[1024px]:py-[10px] max-[1024px]:text-[18px] animate-bounce whitespace-nowrap">Get a quote for free</p>
             
                     <img src="./images/nav.svg" id="nav" alt="">
               <!-- The Modal -->
               <div class="modal" id="myModal">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-lg">
                   <div class="modal-content">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                        <p class="m-auto text-5xl font-semibold">Get a quote</p>
+                      <button type="button" class="btn-close bg-[#D43D26] p-[14px] flex self-end" data-bs-dismiss="modal"></button>
+                        <p class="m-auto text-3xl font-semibold">Get a quote</p>
+                        <form action="" class="mx-[37px]">
+                            <div class="mb-3 mt-3">
+                                <label for="email" class="form-label font-medium text-[14px]">Email address:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email address" name="email">
+                            </div>
+                            <div>
+                                <label for="comment" class=" font-medium text-[14px]">Description:</label>
+                                <textarea class="form-control" rows="10" id="comment" name="text" placeholder="Describe message"></textarea>
+                            </div>
+                        <button type="submit" class="bg-[#D43D26] w-full py-3 text-white animate-bounce mt-7">Get a quote</button>
+                      </form>
+                        
                     </div>
               
                     <!-- Modal footer -->
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <div class="modal-footer bg-white">
+                      <button type="button" class="bg-[#D43D26] rounded-md py-2 px-3" data-bs-dismiss="modal">Close</button>
                     </div>
               
                   </div>
@@ -55,7 +67,7 @@
                 <p class="text-6xl text-white leading-[90px] max-[1300px]:text-4xl max-[1024px]:text-4xl max-[440px]:text-center max-[440px]:text-3xl">"Delivering Efficiency: The Powerhouse of Logistics Solutions"</p>
                 <p class="text-2xl text-white leading-[36px] pr-[40px] max-[1024px]:text-lg max-[440px]:text-center max-[440px]:text-[12px]">"Trucking, Marine, Warehousing, and Oil Tanker Services - Unparalleled Cargo Management and Warehousing Expertise"</p>
                 <div class="flex gap-4 max-[440px]:gap-2">
-                    <p class="bg-[#D43D26] text-white text-xl py-[12px] px-3 animate-bounce max-[1024px]:text-lg whitespace-nowrap
+                    <p type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="bg-[#D43D26] text-white text-xl py-[12px] px-3 animate-bounce max-[1024px]:text-lg whitespace-nowrap
                     max-[440px]:text-[15px] max-[440px]:px-0 max-[440px]:pb-0" id="shade">Get a quote for free</p>
                     <p class="text-white opacity-60 mb-3 font-semibold pt-[11px] whitespace-nowrap text-xl max-[1024px]:text-lg
                     max-[440px]:text-[12px]">NUMBER ONE IN AFRICA</p>
@@ -113,9 +125,9 @@
                 <div class="flex justify-between max-[440px]:flex-col">
                     <p class="text-5xl text-[#1E1E1E] font-semibold max-[1024px]:text-4xl max-[440px]:text-3xl max-[440px]:pb-[20px]">Services</p>
                     <div class="flex flex-col gap-3">
-                        <p class="text-[#1E1E1E] max-[440px]:text-[13.5px] text-xl opacity-80 max-[1024px]:text-[18px]"
+                        <p class="text-[#1E1E1E] max-[440px]:text-[13.5px] text-xl opacity-80 max-[1024px]:text-[16px]"
                         id="decade">With decades of experience in the industry, we have established ourselves as a reliable and efficient partner for businesses of all sizes.</p>
-                        <p id="shade-one" class="bg-[#D43D26] text-white text-xl py-[9px] px-4 w-fit animate-bounce">Get a quote for free</p>
+                        <p id="shade-one" type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="bg-[#D43D26] text-white text-xl py-[9px] px-4 w-fit animate-bounce">Get a quote for free</p>
                     </div>
                 </div>
             
@@ -125,7 +137,7 @@
                         <div class="card-body">
                           <h4 class="card-title font-semibold">Trucking Services</h4>
                           <p class="card-text">We provide seamless transportation services for your goods, ensuring they reach their destination safely and on time.</p>
-                          <a href="#" class="btn border-1 border-[#1AAEC8] text-[#1AAEC8] border-dashed">Try Now</a>
+                          <a href="#" class="no-underline py-2 px-3 border-1 border-[#1AAEC8] text-[#1AAEC8] border-dashed">Try Now</a>
                         </div>
                     </div>
                     <div class="card">
@@ -133,7 +145,7 @@
                         <div class="card-body">
                           <h4 class="card-title font-semibold">Marine Transportation</h4>
                           <p class="card-text">Whether it's bulk cargo or specialized goods, we can handle it all with utmost care and precision.</p>
-                          <a href="#" class="btn border-1 border-[#1AAEC8] text-[#1AAEC8] border-dashed">Try Now</a>
+                          <a href="#" class="no-underline py-2 px-3 border-1 border-[#1AAEC8] text-[#1AAEC8] border-dashed">Try Now</a>
                         </div>
                     </div>
                     <div class="card">
@@ -141,7 +153,7 @@
                         <div class="card-body">
                           <h4 class="card-title font-semibold">Oil Tanker Services</h4>
                           <p class="card-text">Our well-maintained tanker fleet, coupled with a skilled crew, ensures a smooth and incident-free transportation process.</p>
-                          <a href="#" class="btn border-1 border-[#1AAEC8] text-[#1AAEC8] border-dashed">Try Now</a>
+                          <a href="#" class="no-underline py-2 px-3 border-1 border-[#1AAEC8] text-[#1AAEC8] border-dashed">Try Now</a>
                         </div>
                     </div>
                     <div class="card">
@@ -149,7 +161,7 @@
                         <div class="card-body">
                           <h4 class="card-title font-semibold">Cargo Warehousing</h4>
                           <p class="card-text">Our advanced warehousing facilities are designed to accommodate a wide range of cargo, ensuring its security and preservation.</p>
-                          <a href="#" class="btn border-1 border-[#1AAEC8] text-[#1AAEC8] border-dashed">Try Now</a>
+                          <a href="#" class="no-underline py-2 px-3 border-1 border-[#1AAEC8] text-[#1AAEC8] border-dashed">Try Now</a>
                         </div>
                     </div>
                     <div class="card">
@@ -157,7 +169,7 @@
                         <div class="card-body">
                           <h4 class="card-title font-semibold">Logistics Solutions</h4>
                           <p class="card-text">From origin to destination, we offer end-to-end logistics solutions tailored to your specific needs.</p>
-                          <a href="#" class="btn border-1 border-[#1AAEC8] text-[#1AAEC8] border-dashed">Try Now</a>
+                          <a href="#" class="no-underline py-2 px-3 border-1 border-[#1AAEC8] text-[#1AAEC8] border-dashed">Try Now</a>
                         </div>
                     </div>
                 </div>
@@ -166,10 +178,12 @@
         <div id="section-six" class="bg-[#D43D26] h-[500px] max-[440px]:bg-white">
             <p id="review" class="font-semibold text-4xl py-[40px] max-[1024px]:text-3xl max-[440px]:text-2xl max-[440px]:py-[10px]">Our customers reviews</p>
             <div id="s-six" class="bg-white w-4/5 m-auto gap-8 py-11 px-10 max-[440px]:px-6 max-[1024px]:px-8 max-[1024px]:py-5">
-                <div id="customer">
-                    <div class="">
+                <!-- <div id="customer">
+                    <div class="cursor-zoom-in">
                         <img id="image-three" src="./images/customer.svg" alt="">
                     </div>
+
+
                     <div id="texts-three" class="my-[75px] flex flex-col gap-8 max-[1024px]:my-[20px] max-[440px]:my-[10px]">
                         <p class="text-lg text-[#1E1E1E] opacity-80 max-[1024px]:text-[16px] max-[440px]:text-[14px]
                         ">"We have been working with <strong>Onye-ji-cash</strong> for several years now, and they have consistently exceeded our expectations. Their trucking services are reliable, and their drivers are professional and punctual. Whether it's a local delivery or a long-haul shipment, they handle it with precision.
@@ -178,19 +192,82 @@
                             <p class="font-semibold text-[#02799E]">- John D.</p>
                             <p class="font-semibold text-[#1E1E1E]">Logistics Manager, ABC Manufacturing</p>
                         </div>
-                    </div>
-                </div>
-                <div id="pagination" class="flex justify-center gap-2 mt-5">
-                    <img src="./images/carousel3.svg" alt="">
-                    <img src="./images/carousel1.svg" alt="">
-                    <img src="./images/carousel2.svg" alt="">
+                    </div> -->
+                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators bg-black">
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div>
+                        
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div id="customer">
+                            <img src="./images/customer.svg" alt="Los Angeles" class="d-block" style="width:100%">
+                            <!-- <div class="carousel-caption">
+                              <h3>Los Angeles</h3>
+                              <p>We had such a great time in LA!</p>
+                            </div> -->
+                            <div id="texts-three" class="my-[75px] flex flex-col gap-8 max-[1024px]:my-[20px] max-[440px]:my-[10px]">
+                                <p class="text-lg text-[#1E1E1E] opacity-80 max-[1024px]:text-[16px] max-[440px]:text-[14px]
+                                ">"We have been working with <strong>Onye-ji-cash</strong> for several years now, and they have consistently exceeded our expectations. Their trucking services are reliable, and their drivers are professional and punctual. Whether it's a local delivery or a long-haul shipment, they handle it with precision.
+                                     We highly recommend them for all your transportation needs."</p>
+                                <div>
+                                    <p class="font-semibold text-[#02799E]">- John D.</p>
+                                    <p class="font-semibold text-[#1E1E1E]">Logistics Manager, ABC Manufacturing</p>
+                                </div>
+                            </div>
+                        </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div id="customer">
+                            <img src="./images/customer.svg" alt="Chicago" class="d-block" style="width:100%">
+                            <div id="texts-three" class="my-[75px] flex flex-col gap-8 max-[1024px]:my-[20px] max-[440px]:my-[10px]">
+                                <p class="text-lg text-[#1E1E1E] opacity-80 max-[1024px]:text-[16px] max-[440px]:text-[14px]
+                                ">"We have been working with <strong>Onye-ji-cash</strong> for several years now, and they have consistently exceeded our expectations. Their trucking services are reliable, and their drivers are professional and punctual. Whether it's a local delivery or a long-haul shipment, they handle it with precision.
+                                     We highly recommend them for all your transportation needs."</p>
+                                <div>
+                                    <p class="font-semibold text-[#02799E]">- John D.</p>
+                                    <p class="font-semibold text-[#1E1E1E]">Logistics Manager, ABC Manufacturing</p>
+                                </div>
+                            </div>
+                        </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div id="customer">
+                            <img src="./images/customer.svg" alt="New York" class="d-block" style="width:100%">
+                            <div id="texts-three" class="my-[75px] flex flex-col gap-8 max-[1024px]:my-[20px] max-[440px]:my-[10px]">
+                                <p class="text-lg text-[#1E1E1E] opacity-80 max-[1024px]:text-[16px] max-[440px]:text-[14px]
+                                ">"We have been working with <strong>Onye-ji-cash</strong> for several years now, and they have consistently exceeded our expectations. Their trucking services are reliable, and their drivers are professional and punctual. Whether it's a local delivery or a long-haul shipment, they handle it with precision.
+                                     We highly recommend them for all your transportation needs."</p>
+                                <div>
+                                    <p class="font-semibold text-[#02799E]">- John D.</p>
+                                    <p class="font-semibold text-[#1E1E1E]">Logistics Manager, ABC Manufacturing</p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        
+                        <!-- Left and right controls/icons -->
+                        <div class="pt-[100px]">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                              <span class="carousel-control-next-icon bg-black"></span>
+                            </button></div>
+                      </div>
                 </div>
             </div>
         </div>
 
-        <div id="section-seven" class="mt-[200px] container max-[440px]:mt-[370px]">
+        <div id="section-seven" class="mt-[250px] container max-[440px]:mt-[440px]">
             <p class="text-[#1E1E1E] font-semibold text-5xl max-[1024px]:text-4xl max-[440px]:text-3xl text-center py-[60px] max-[1024px]:mt-[-60px]">Contact Us</p>
-            <div id="form-one" class="grid gap-5">
+            <div id="form-one" class="grid gap-5 max-[440px]:mt-[-30px]">
                 <div id="form">
                     <p class="text-[#1E1E1E] font-semibold text-3xl max-[440px]:text-xl">Send a message</p>
                     <form action="">
@@ -212,15 +289,15 @@
 
         <div id="section-eight" class="mt-11 container flex flex-col pt-[160px] max-[440px]:pt-[120px]">
             <p class="text-white text-5xl w-3/4 m-auto text-center max-[1024px]:text-3xl max-[440px]:text-2xl">"Efficient Logistics Solutions: Seamlessly Connecting Your Supply Chain!"</p>
-            <p class="btn bg-[#D43D26] text-white text-xl py-[12px] px-3 mt-12 mb-[170px] w-fit mx-auto animate-bounce">Get a quote for free</p>
+            <p type="button" data-bs-toggle="modal" data-bs-target="#myModal" class=" bg-[#D43D26] text-white text-xl py-[12px] px-3 mt-12 mb-[170px] w-fit mx-auto animate-bounce">Get a quote for free</p>
         </div>
 
         <div id="section-nine" class="container flex justify-between mt-[40px]">
-            <a href="index.html" class="text-[#D43D26] max-[440px]:mt-[-20px] font-semibold text-[24px] max-[440px]:text-[18px] whitespace-nowrap">Onye-ji-cash</a>
-            <div class="flex gap-[46px] text-lg max-[440px]:text-[14px] text-[#1E1E1E] max-[440px]:translate-x-[-34%] max-[440px]:translate-y-[140px]">
-                <a href="#section-three" class="whitespace-nowrap">About Us</a>
-                <a href="#section-five" class="whitespace-nowrap">Our Services</a>
-                <a href="#section-seven" class="whitespace-nowrap">Contact Us</a>
+            <a href="index.html" class="no-underline text-[#D43D26] max-[440px]:mt-[-20px] font-semibold text-[24px] max-[440px]:text-[18px] whitespace-nowrap">Onye-ji-cash</a>
+            <div class="flex gap-[46px] max-[440px]:translate-x-[-34%] max-[440px]:translate-y-[150px]">
+                <a href="#section-three" class="whitespace-nowrap text-lg max-[440px]:text-[14px] text-[#1E1E1E] no-underline">About Us</a>
+                <a href="#section-five" class="whitespace-nowrap text-lg max-[440px]:text-[14px] text-[#1E1E1E] no-underline">Our Services</a>
+                <a href="#section-seven" class="whitespace-nowrap text-lg max-[440px]:text-[14px] text-[#1E1E1E] no-underline">Contact Us</a>
             </div>
             <div id="media" class="flex gap-4 max-[1024px]:flex-col max-[440px]:invisible">
                 <a href=""><img src="./images/ig.svg" alt="Ig logo" class="bg-gray-300 py-1 px-1 rounded-md"></a>
@@ -231,15 +308,15 @@
 
         <div id="section-nine" class="container mt-9 flex flex-col gap-2 max-[1024px]:mt-[-50px]">
             <div class="flex gap-3">
-                <img src="./images/location.svg" alt="">
+                <img src="./images/location.svg" alt="" class="mb-[14px]">
                 <p class="text-[16px]  max-[440px]:text-[14px] text-[#1E1E1E]">No 32, Agbado road Isheri, Ogun state</p>
             </div>
             <div class="flex gap-3">
-                <img src="./images/call.svg" alt="">
+                <img src="./images/call.svg" alt="" class="mb-[14px]">
                 <p class="text-[16px] max-[440px]:text-[14px] text-[#1E1E1E]">+234 803827292, +234 9054147689</p>
             </div>
             <div class="flex gap-3">
-                <img src="./images/email.svg" alt="">
+                <img src="./images/email.svg" alt="" class="mb-[14px]">
                 <p class="text-[16px] max-[440px]:text-[14px] text-[#1E1E1E]">Onye-ji-cash@gmail.com</p>
             </div>
         </div>

@@ -1,10 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body{
     position: relative;
     padding: 0;
 }
-#content{
-    padding: 0;
-    margin-right: -15%;
+
+a:hover{
+    transform: scale(110%);
+    letter-spacing: 0.4mm;
+    transition: 0.3s ease-in-out;
 }
 
 #section-one{
@@ -48,7 +54,9 @@ body{
     align-self: self-end;
 }
 #decade{
+    align-self: end;
     text-align: end;
+    width: 70%;
 }
 #s-six{
     box-shadow: 2px 2px 5px 0 black;
@@ -76,13 +84,15 @@ body{
      background-repeat: no-repeat;
 }
 #review{
-    color: #1E1E1E;
+    color: white;
     text-align: center;
 }
 #image-three{
     border-radius: 12px;
 }
-
+#btn1{
+    cursor: pointer;
+}
 @media only screen and (max-width: 1024px){
     #cards{
         display: grid;
@@ -149,5 +159,8 @@ body{
     #decade{
         text-align: start;
     }
-   
+    #content{
+        padding: 0;
+        margin-right: -15%;
+    }
 }
