@@ -1,5 +1,10 @@
 body{
     position: relative;
+    padding: 0;
+}
+#content{
+    padding: 0;
+    margin-right: -15%;
 }
 
 #section-one{
@@ -36,6 +41,14 @@ body{
 }
 #shade{
     box-shadow: 2px 2px 5px 0 #1AAEC8;
+}
+#shade-one{
+    box-shadow: 2px 2px 5px 0 #1AAEC8;
+    display: flex;
+    align-self: self-end;
+}
+#decade{
+    text-align: end;
 }
 #s-six{
     box-shadow: 2px 2px 5px 0 black;
@@ -129,9 +142,12 @@ body{
     #form-one{
         display: flex;
         flex-direction: column;
-    }    
-    body{
-        margin: 0;
-        padding: 0;
     }
+    #shade-one{
+        align-self: self-start;
+    }
+    #decade{
+        text-align: start;
+    }
+   
 }
